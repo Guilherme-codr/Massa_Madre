@@ -30,3 +30,22 @@ export const pilares = [
     texto: 'Nossos pães assam direto na pedra quente do forno de lastro, criando crosta crocante e miolo úmido.',
   },
 ]
+
+// Avaliações exibidas na seção "O que dizem sobre nossas fornadas"
+export const avaliacoes = [
+  {
+    nome: 'Mariana Albuquerque',
+    subtitulo: 'Frequentadora de domingo',
+    texto: 'O pão de fermentação natural tem uma casca crocante e um miolo macio que eu nunca encontrei em outro lugar. Virou ritual de sábado aqui em casa.',
+  },
+  {
+    nome: 'Rafael Vasconcelos',
+    subtitulo: 'Cliente assíduo',
+    texto: 'Café especial impecável e tostadas saindo na hora. O jardim é perfeito para levar meu cachorro e passar a manhã sem pressa.',
+  },
+  {
+    nome: 'Camila Vitoria',
+    subtitulo: 'Apaixonada pela baguete de levain',
+    texto: 'Dá para sentir o cuidado em cada fornada. Leve, saboroso e sem aquele peso de pão industrial. Recomendo a baguete!',
+  },
+]

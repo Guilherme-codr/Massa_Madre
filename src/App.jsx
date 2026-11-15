@@ -7,6 +7,7 @@ import Hero from './sections/Hero'
 import Essencia from './sections/Essencia'
 import Fornada from './sections/Fornada'
 import Cafeteria from './sections/Cafeteria'
+import Avaliacoes from './sections/Avaliacoes'
 
 // Monta a página. Para adicionar uma seção nova: crie em src/sections/ e coloque dentro do <main>.
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
         <Essencia />
         <Fornada qtd={sacola} mudar={mudarSacola} />
         <Cafeteria />
+        <Avaliacoes />
       </main>
     </>
   )

@@ -1,11 +1,11 @@
 import { icons } from './icons'
 
 // Uso: <Icon name="wheat" className="size-6" />
-export default function Icon({ name, className = 'size-5' }) {
+export default function Icon({ name, className = 'size-5', fill = 'none' }) {
   return (
     <svg
       viewBox="0 0 24 24"
-      fill="none"
+      fill={fill}
       stroke="currentColor"
       strokeWidth="1.8"
       strokeLinecap="round"
