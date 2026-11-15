@@ -1,0 +1,92 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-serif: 'Cormorant Garamond', ui-serif, Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --color-creme: #faf6f0;
+  --color-areia: #f1e9dd; /* creme um tom mais escuro */
+  --color-cafe: #2c1e16;
+  --color-terracota: #b85d3b;
+  --color-salvia: #5c6b54;
+  --color-dourado: #d29a5a; /* mesmo tom da casca da scrollbar */
+}
+
+@layer base {
+  body {
+    @apply bg-creme text-cafe font-sans antialiased;
+  }
+  /* pontilhado sutil do fundo, como no modelo (também na sacola) */
+  body,
+  .fundo-pontilhado {
+    background-image: radial-gradient(rgb(44 30 22 / 0.06) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif;
+  }
+  /* Tailwind v4 tirou o cursor pointer dos botões */
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/* Menu lateral: trava o scroll da página e desliza da direita */
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+.menu-painel[open] {
+  animation: menu-entra 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.menu-painel[open]::backdrop {
+  animation: menu-fundo 0.3s ease-out;
+}
+@keyframes menu-entra {
+  from {
+    transform: translateX(100%);
+  }
+}
+@keyframes menu-fundo {
+  from {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .menu-painel[open],
+  .menu-painel[open]::backdrop {
+    animation: none;
+  }
+}
+
+/* Scrollbar em forma de baguete: casca dourada com cortes diagonais */
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-creme);
+  box-shadow: inset 1px 0 0 rgb(44 30 22 / 0.08);
+}
+::-webkit-scrollbar-thumb {
+  border: 2px solid var(--color-creme);
+  border-radius: 999px;
+  background:
+    repeating-linear-gradient(150deg, transparent 0 18px, rgb(255 228 170 / 0.75) 18px 21px, transparent 21px 30px),
+    linear-gradient(90deg, #8a4b26, #d29a5a 40%, #e7b877 55%, #a8642f);
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:
+    repeating-linear-gradient(150deg, transparent 0 18px, rgb(255 228 170 / 0.85) 18px 21px, transparent 21px 30px),
+    linear-gradient(90deg, #7a4020, #c48a4a 40%, #ddaa68 55%, #96562a);
+  background-clip: padding-box;
+}
+
+/* Firefox não aceita formas, só cores: casca no trilho creme */
+@supports not selector(::-webkit-scrollbar) {
+  html {
+    scrollbar-color: #c48a4a var(--color-creme);
+  }
+}
