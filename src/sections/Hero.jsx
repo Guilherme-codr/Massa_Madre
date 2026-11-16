@@ -22,7 +22,7 @@ export default function Hero() {
 
         <div className="mt-10 flex flex-col sm:flex-row sm:justify-center gap-3">
           <a
-            href="#cardapio"
+            href="#fornada"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-cafe px-8 py-4 font-semibold text-creme hover:bg-cafe/90"
           >
             Ver Cardápio do Dia <Icon name="arrow" className="size-4" />
