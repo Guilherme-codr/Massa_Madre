@@ -3,11 +3,13 @@ import AvisoFornada from './components/AvisoFornada'
 import Header from './components/Header'
 import MenuLateral from './components/MenuLateral'
 import Sacola from './components/Sacola'
+import Footer from './components/Footer'
 import Hero from './sections/Hero'
 import Essencia from './sections/Essencia'
 import Fornada from './sections/Fornada'
 import Cafeteria from './sections/Cafeteria'
 import Avaliacoes from './sections/Avaliacoes'
+import OndeEstamos from './sections/OndeEstamos'
 
 // Monta a página. Para adicionar uma seção nova: crie em src/sections/ e coloque dentro do <main>.
 export default function App() {
@@ -31,7 +33,9 @@ export default function App() {
         <Fornada qtd={sacola} mudar={mudarSacola} />
         <Cafeteria />
         <Avaliacoes />
+        <OndeEstamos />
       </main>
+      <Footer />
     </>
   )
 }
