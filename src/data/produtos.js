@@ -22,7 +22,7 @@ export const produtos = [
     nome: 'Pão de Levain',
     descricao: 'Fermentação de 48h, 800g',
     preco: 28,
-    imagem: '',
+    imagem: 'pao_levain.jpg',
   },
   {
     id: 'baguete',
@@ -30,7 +30,7 @@ export const produtos = [
     nome: 'Baguete Tradicional',
     descricao: 'Crosta crocante, 250g',
     preco: 12,
-    imagem: '',
+    imagem: 'baguete_tradicional.jpg',
   },
   {
     id: 'integral',
@@ -38,7 +38,7 @@ export const produtos = [
     nome: 'Pão Integral com Grãos',
     descricao: 'Grãos orgânicos, 700g',
     preco: 32,
-    imagem: '',
+    imagem: 'Pao_integral_graos.jpg',
   },
   {
     id: 'focaccia',
@@ -46,7 +46,7 @@ export const produtos = [
     nome: 'Focaccia de Alecrim',
     descricao: 'Azeite e sal grosso, 500g',
     preco: 24,
-    imagem: '',
+    imagem: 'focaccia_de_alecrim.jpg',
   },
   {
     id: 'croissant',
@@ -54,7 +54,7 @@ export const produtos = [
     nome: 'Croissant de Manteiga',
     descricao: 'Manteiga francesa, unidade',
     preco: 11,
-    imagem: '',
+    imagem: 'Croissant_de_Manteiga.jpg',
   },
   {
     id: 'pain-chocolat',
@@ -62,7 +62,7 @@ export const produtos = [
     nome: 'Pain au Chocolat',
     descricao: 'Chocolate 70% cacau, unidade',
     preco: 13,
-    imagem: '',
+    imagem: 'Pain_au_chocolat.jpg',
   },
   {
     id: 'cafe',
@@ -70,7 +70,7 @@ export const produtos = [
     nome: 'Café Especial',
     descricao: 'Grãos moídos na hora, 250g',
     preco: 45,
-    imagem: '',
+    imagem: 'cafe_especial.jpg',
   },
   {
     id: 'brunch',
@@ -78,7 +78,7 @@ export const produtos = [
     nome: 'Kit Brunch',
     descricao: 'Pão, geleia, manteiga e queijo',
     preco: 79,
-    imagem: '',
+    imagem: 'Kit_brunch.jpg',
   },
 ]
 

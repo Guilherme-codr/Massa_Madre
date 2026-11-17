@@ -13,6 +13,6 @@ export const reais = (valor) => valor.toLocaleString('pt-BR', { style: 'currency
 
 // Redes do desenvolvedor, usadas no rodapé
 // shortcut: WhatsApp e LinkedIn fictícios, troque pelos seus
-export const MEU_WHATSAPP = 'https://wa.me/5500000000000'
-export const MEU_LINKEDIN = 'https://www.linkedin.com/in/seu-perfil'
+export const MEU_WHATSAPP = 'https://wa.me/5521966716778'
+export const MEU_LINKEDIN = 'https://www.linkedin.com/in/guilhermelacerdafaria'
 export const MEU_GITHUB = 'https://github.com/Guilherme-codr'
